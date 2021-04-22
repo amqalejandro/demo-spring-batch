@@ -1,0 +1,26 @@
+com/example/demo/config/JobCompletionNotificationListener.java
+ com.example.demo.config.JobCompletionNotificationListener
+com/example/demo/domain/mapper/PersonaMapper.java
+ com.example.demo.domain.mapper.PersonaMapper
+com/example/demo/services/PersonaService.java
+ com.example.demo.services.PersonaService
+com/example/demo/batch/steps/PersonItemProcessor.java
+ com.example.demo.batch.steps.PersonItemProcessor
+com/example/demo/controller/PersonaController.java
+ com.example.demo.controller.PersonaController
+com/example/demo/domain/entity/PersonEntity.java
+ com.example.demo.domain.entity.PersonEntity
+ com.example.demo.domain.entity.PersonEntity$PersonEntityBuilder
+com/example/demo/domain/PersonDto.java
+ com.example.demo.domain.PersonDto
+com/example/demo/batch/steps/PersonItemWrite.java
+ com.example.demo.batch.steps.PersonItemWrite
+com/example/demo/persistence/PersonEntityRepository.java
+ com.example.demo.persistence.PersonEntityRepository
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+com/example/demo/services/impl/PersonaServiceImpl.java
+ com.example.demo.services.impl.PersonaServiceImpl
+com/example/demo/config/BatchConfiguration.java
+ com.example.demo.config.BatchConfiguration
+ com.example.demo.config.BatchConfiguration$1

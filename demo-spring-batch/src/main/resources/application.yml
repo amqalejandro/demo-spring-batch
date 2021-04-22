@@ -1,0 +1,38 @@
+spring:
+  batch:
+    initialize-schema: ALWAYS
+    job:
+      enabled: false
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=America/Bogota #/35.194.81.99:3306/carina
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      test-on-borrow: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    #create-drop
+    #update
+    properties:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      show-sql: true
+
+    servlet:
+      multipart:
+        enabled: true
+        max-file-size: 50000KB
+        max-request-size: 100000KB
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"
+    file:    "%d{yyyy-MM-dd HH:mm:ss,SSS} [%thread] %-5level %logger{36} - %msg%n"
+  level:
+    org.springframework: ERROR
+    org.mutualser.appointmentmanagement: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  file: logs/survey.log
